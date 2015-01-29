@@ -33,7 +33,7 @@ def index(**kwargs):
         if 'name' in kwargs.keys():
             name = kwargs['name']
             del kwargs['name']
-        # key_list = [key for key in kwargs.keys()]
+
         if kwargs:
             directive = ' '.join([ kwargs[possible_keys[key]] for key in range(len(kwargs.keys()))])
 
