@@ -1,6 +1,12 @@
 {% extends "bootstrap/base.html" %}
 
+{% import "bootstrap/google.html" as google %}
+
 {% block title %}Tell Me To {% block subtitle %}{% endblock %}{% endblock %}
+{% block scripts %}
+{{ super() }}
+{{ google.analytics(account="UA-546350-3") }}
+{% endblock %}
 
 {% block content %}
 <div class="container">
